@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Socket.IO chat</title>
+
+</head>
+
+<body>
+  <p>hello world</p>
+  <p>hello world</p>
+  <p>hello world</p>
+  <p>hello world</p>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script>
+    var socket = io();
+    guest = `guest${Math.floor(Math.random() * (99999 - 11111 + 1)) + 11111}`
+    socket.emit('new player', guest);
+    socket.on('players', function (players) {
+      console.log(players);
+
+    });
+  </script>
+</body>
+
+</html>
