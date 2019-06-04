@@ -5,7 +5,7 @@
   var players = {};
   app.get('/', function (req, res) {
     // res.sendFile('http://www.adrian.art.8p.pl/str/');
-    res.sendFile(__dirname + '/pages/index.html');
+    res.sendFile(__dirname + '/index.html');
   });
   io.on('connection', function (socket) {
     socket.on('disconnect', function () {
