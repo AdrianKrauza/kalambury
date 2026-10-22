@@ -3,15 +3,17 @@
   "version": "0.0.1",
   "description": "my first socket.io app",
   "dependencies": {
-    "express": "^4.15.2",
-    "heroku": "^7.25.0",
-    "nodemon": "^1.19.1",
-    "socket.io": "^1.7.3"
+    "express": "^4.22.3",
+    "socket.io": "^4.8.4"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.18.0"
+  }
 }
